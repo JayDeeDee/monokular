@@ -395,6 +395,7 @@ body {
 .boden-3 {
     background: linear-gradient(270deg, #0C1126 0%, #0E183A 50%, #0C1126 0%);
     z-index: 7;
+    box-shadow: rgb(0 0 0 / 56%) 0 -21px 70px 4px;
 }
 
 
