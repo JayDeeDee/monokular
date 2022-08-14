@@ -273,10 +273,22 @@ body {
 /**
  * buttons
  */
+.download {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    z-index: 30;
+}
+.download-link {
+    font-size: 22px;
+    padding: 10px;
+    color: #fff;
+}
 .btn-area {
     position: relative;
     z-index: 20;
-    padding: 10px;
+    padding: 10px 0;
+    margin: 0 70px;
 }
 .area-bottom {
     position: absolute;
@@ -418,7 +430,7 @@ body {
 
 
 .kugel-2 {
-    bottom: 13vh;
+    bottom: 16vh;
     left: 60vw;
     z-index: 18;
     height: 5vh;
@@ -428,8 +440,8 @@ body {
 }
 
 .kugel-3{
-    bottom: 9.5vh;
-    left: 63vw;
+    bottom: 10vh;
+    left: 61.7vw;
     z-index: 18;
     height: 6vh;
     width: 6vh;
