@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
 
     <title>Monokulare Tiefenhinweise</title>
 
     <!-- Bootstrap -->
-    <link href='css/bootstrap.min.css' rel='stylesheet' type='text/css' />
-    <link href='css/fa-all.css' rel='stylesheet' type='text/css' />
+    <link href='css/bootstrap.min.css' rel='stylesheet' type='text/css'/>
+    <link href='css/fa-all.css' rel='stylesheet' type='text/css'/>
 
     <!-- Styles fuer Monokulare Tiefenkriterien -->
-    <link href='css/monokular.css' rel='stylesheet' type='text/css' />
+    <link href='css/monokular.css' rel='stylesheet' type='text/css'/>
 </head>
 <!-- effekte -->
 <body class="hat_rel-groesse hat_helligkeit hat_parallax hat_blur">
@@ -38,15 +38,19 @@
 <div class="btn-area area-top">
     <div class="btn-toolbar">
         <div class="btn-group me-2 btn-group-sm btn-group-parallax" role="group" aria-label="Interposition">
-            <button type="button" data-bs-toggle="modal" data-bs-target="#modalTief2" class="btn btn-primary"> Interposition: <sup><i class="fa-solid fa-info"></i></sup></button>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modalTief2" class="btn btn-primary">
+                Interposition: <sup><i class="fa-solid fa-info"></i></sup></button>
         </div>
         <div class="btn-group me-2 btn-group-sm btn-group-rel-groesse" role="group" aria-label="Linearperspektive">
-            <button type="button" data-bs-toggle="modal" data-bs-target="#modalTief6" class="btn btn-primary">Linearperspektive: <sup><i class="fa-solid fa-info"></i></sup></button>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modalTief6" class="btn btn-primary">
+                Linearperspektive: <sup><i class="fa-solid fa-info"></i></sup></button>
         </div>
 
 
-        <div class="btn-group me-2 btn-group-sm btn-group-rel-groesse" role="group" aria-label="Relative Höhe im Blickfeld">
-            <button type="button" data-bs-toggle="modal" data-bs-target="#modalTief5" class="btn btn-primary">Relative Höhe im Blickfeld: <sup><i class="fa-solid fa-info"></i></sup></button>
+        <div class="btn-group me-2 btn-group-sm btn-group-rel-groesse" role="group"
+             aria-label="Relative Höhe im Blickfeld">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modalTief5" class="btn btn-primary">Relative
+                Höhe im Blickfeld: <sup><i class="fa-solid fa-info"></i></sup></button>
         </div>
 
     </div>
@@ -54,25 +58,34 @@
 </div>
 <div class="btn-area area-bottom">
     <div class="btn-toolbar">
-    <div class="btn-group me-2 btn-group-sm btn-group-parallax" role="group" aria-label="Bewegungsparallaxe">
-        <button type="button" data-bs-toggle="modal" data-bs-target="#modalTief1" class="btn btn-primary">Bewegungsparallaxe: <sup><i class="fa-solid fa-info"></i></sup></button>
-        <button type="button" data-on="hat_parallax" class="btn btn-success btn-on"><i class="fa-solid fa-toggle-on"></i></button>
-        <button type="button" data-off="hat_parallax" class="btn btn-danger btn-off"><i class="fa-solid fa-toggle-off"></i></button>
-    </div>
-    <div class="btn-group me-2 btn-group-sm btn-group-rel-groesse" role="group" aria-label="Relative Größe im Blickfeld">
-        <button type="button" data-bs-toggle="modal" data-bs-target="#modalTief3" class="btn btn-primary">Relative Größe im Blickfeld: <sup><i class="fa-solid fa-info"></i></sup></button>
-        <button type="button" data-on="hat_rel-groesse" class="btn btn-success btn-on"><i class="fa-solid fa-toggle-on"></i></button>
-        <button type="button" data-off="hat_rel-groesse" class="btn btn-danger btn-off"><i class="fa-solid fa-toggle-off"></i></button>
-    </div>
-    <div class="btn-group me-2 btn-group-sm btn-group-rel-groesse" role="group" aria-label="Gewohnte Größe von Objekten">
-        <button type="button" data-bs-toggle="modal" data-bs-target="#modalTief4" class="btn btn-primary">Gewohnte Größe von Objekten: <sup><i class="fa-solid fa-info"></i></sup></button>
-    </div>
+        <div class="btn-group me-2 btn-group-sm btn-group-parallax" role="group" aria-label="Bewegungsparallaxe">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modalTief1" class="btn btn-primary">
+                Bewegungsparallaxe: <sup><i class="fa-solid fa-info"></i></sup></button>
+            <button type="button" data-on="hat_parallax" class="btn btn-success btn-on"><i
+                    class="fa-solid fa-toggle-on"></i></button>
+            <button type="button" data-off="hat_parallax" class="btn btn-danger btn-off"><i
+                    class="fa-solid fa-toggle-off"></i></button>
+        </div>
+        <div class="btn-group me-2 btn-group-sm btn-group-rel-groesse" role="group"
+             aria-label="Relative Größe im Blickfeld">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modalTief3" class="btn btn-primary">Relative
+                Größe im Blickfeld: <sup><i class="fa-solid fa-info"></i></sup></button>
+            <button type="button" data-on="hat_rel-groesse" class="btn btn-success btn-on"><i
+                    class="fa-solid fa-toggle-on"></i></button>
+            <button type="button" data-off="hat_rel-groesse" class="btn btn-danger btn-off"><i
+                    class="fa-solid fa-toggle-off"></i></button>
+        </div>
+        <div class="btn-group me-2 btn-group-sm btn-group-rel-groesse" role="group"
+             aria-label="Gewohnte Größe von Objekten">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modalTief4" class="btn btn-primary">Gewohnte
+                Größe von Objekten: <sup><i class="fa-solid fa-info"></i></sup></button>
+        </div>
     </div>
 </div>
 
 <!-- title -->
 <div class='titel'>
-    <h1><span class="top">Monokulare</span><br /><span class="bottom">Tiefenhinweise</span></h1>
+    <h1><span class="top">Monokulare</span><br/><span class="bottom">Tiefenhinweise</span></h1>
 </div>
 
 <!-- overlays -->
@@ -106,19 +119,139 @@
                 <div class="modal-body">
                     <h3>Beschreibung</h3>
                     <div class="float-img">
-                        <svg id="verdecken" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 657.64 368.5"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#a9bddf;}.cls-3{fill:#101e4e;}.cls-4{fill:#2e4a7a;}.cls-5{font-family:LucidaGrande, 'Lucida Grande';font-size:36px;}</style><symbol id="Baum" viewBox="0 0 164.05 189.06"><g><path id="Baum-innen" class="cls-2" d="M159.46,169.55l-32.35-37.29c-.66-.76-.82-1.85-.4-2.77,.42-.92,1.34-1.51,2.35-1.51h11.68c3.64,0,6.83-2.01,8.33-5.24,1.48-3.18,1-6.69-1.27-9.38l-34.21-40.21c-.65-.76-.8-1.85-.38-2.76,.42-.91,1.34-1.5,2.35-1.5h15.26c3.68,0,5.92-2.12,6.8-4.1,.96-2.18,.55-4.48-1.12-6.3L88.32,4.38c-1.37-1.5-3.42-2.38-5.61-2.38-.15,0-.3,.01-.45,.02h-.1s-.09,.01-.13,.01-.09,0-.13,0h-.1c-.15-.02-.3-.03-.45-.03-2.2,0-4.25,.87-5.63,2.39L27.57,58.48c-1.69,1.85-2.1,4.14-1.14,6.32,.87,1.98,3.12,4.1,6.8,4.1h15.26c1,0,1.92,.59,2.35,1.5,.42,.91,.27,1.99-.38,2.76L16.24,113.37c-2.27,2.69-2.74,6.19-1.27,9.37,1.5,3.23,4.69,5.24,8.33,5.24h11.68c1.01,0,1.93,.59,2.35,1.51,.42,.92,.26,2-.4,2.77L4.59,169.55c-2.75,3.19-3.36,7.58-1.58,11.46,1.73,3.79,5.19,6.05,9.26,6.05H151.79c4.07,0,7.53-2.26,9.26-6.05,1.78-3.88,1.17-8.28-1.59-11.47Z"/><path id="Baumkontur" class="cls-4" d="M160.98,168.24l-32.35-37.29c-.33-.38-.06-.97,.44-.97h11.68c9.46,0,14.59-10.8,8.59-17.91l-34.21-40.21c-.32-.38-.05-.96,.45-.96h15.26c7.89,0,12.14-8.31,7.15-13.76L89.81,3.05c-1.85-2.03-4.48-3.05-7.11-3.05-.23,0-.45,.02-.67,.03-.22-.01-.45-.03-.67-.03-2.63,0-5.26,1.02-7.11,3.05L26.07,57.15c-4.99,5.45-.74,13.76,7.15,13.76h15.26c.5,0,.77,.58,.45,.96L14.72,112.08c-6,7.11-.88,17.91,8.59,17.91h11.68c.5,0,.77,.59,.44,.97L3.08,168.24c-6.95,8.04-1.37,20.82,9.19,20.82H151.79c10.56,0,16.14-12.78,9.19-20.82Zm-9.19,18.82H12.26c-4.07,0-7.53-2.26-9.26-6.05-1.78-3.88-1.17-8.28,1.58-11.46l32.35-37.29c.66-.76,.82-1.85,.4-2.77-.42-.92-1.34-1.51-2.35-1.51h-11.68c-3.64,0-6.83-2.01-8.33-5.24-1.48-3.18-1-6.69,1.27-9.37l34.21-40.21c.65-.76,.8-1.85,.38-2.76-.42-.91-1.34-1.5-2.35-1.5h-15.26c-3.68,0-5.92-2.12-6.8-4.1-.96-2.18-.55-4.48,1.14-6.32L75.72,4.39c1.38-1.52,3.43-2.39,5.63-2.39,.15,0,.3,.01,.45,.02h.1s.09,.01,.13,.01,.09,0,.13,0h.1c.15-.02,.3-.03,.45-.03,2.2,0,4.25,.87,5.61,2.38l48.19,54.12c1.67,1.83,2.08,4.12,1.12,6.3-.87,1.98-3.12,4.1-6.8,4.1h-15.26c-1,0-1.92,.59-2.35,1.5-.42,.91-.27,1.99,.38,2.76l34.21,40.21c2.27,2.69,2.75,6.2,1.27,9.38-1.5,3.23-4.69,5.24-8.33,5.24h-11.68c-1.01,0-1.93,.59-2.35,1.51-.42,.92-.26,2,.4,2.77l32.35,37.29c2.76,3.19,3.36,7.58,1.59,11.47-1.73,3.79-5.19,6.05-9.26,6.05Z"/></g></symbol><symbol id="Haus" viewBox="0 0 155.49 168.44"><path id="Haus-2" class="cls-3" d="M155.48,74.98c0-5.96-2.5-11.56-6.92-15.57L87.26,3.68c-2.69-2.45-6.1-3.68-9.51-3.68s-6.81,1.23-9.51,3.68L6.94,59.39c-4.42,4.01-6.94,9.72-6.94,15.67v79.24c0,7.81,6.33,14.14,14.14,14.14h127.22c7.81,0,14.14-6.32,14.14-14.12V74.98Zm-58.31,35.15c0,3.59-2.88,6.48-6.48,6.48h-25.91c-3.59,0-6.48-2.88-6.48-6.48v-25.91c0-3.59,2.89-6.48,6.48-6.48h25.92c3.6,0,6.47,2.88,6.47,6.48v25.91Z"/></symbol></defs><g id="Hintergrund"><rect class="cls-1" x="0" y="85.04" width="657.64" height="283.46"/></g><g id="Haus-mit-Baum"><use width="164.05" height="189.06" transform="translate(91.39 153.71)" xlink:href="#Baum"/><use width="155.49" height="168.44" transform="translate(25.14 174.34)" xlink:href="#Haus"/></g><g id="Baum-C"><use width="164.05" height="189.06" transform="translate(468.44 110.77)" xlink:href="#Baum"/><text class="cls-5" transform="translate(538.02 46.59)"><tspan x="0" y="0">C</tspan></text></g><g id="Baum-B"><use width="164.05" height="189.06" transform="translate(404.09 132.24)" xlink:href="#Baum"/><text class="cls-5" transform="translate(475.77 46.59)"><tspan x="0" y="0">B</tspan></text></g><g id="Baum-A"><use width="164.05" height="189.06" transform="translate(339.74 153.71)" xlink:href="#Baum"/><text class="cls-5" transform="translate(409.35 46.59)"><tspan x="0" y="0">A</tspan></text></g></svg>
-                        <p class="small">In der Abbildung wird ein Baum von einem Haus verdeckt und wirkt weiter weg, obwohl sich in dem Bild beide Objekte auf der gleichen Höhe befinden. Innerhalb der Baumgruppe wirkt Baum C, welcher von zwei davor platzierten Bäumen verdeckt wird, am weitesten weg.</p>
+                        <svg version="1.1" id="verdecken" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 657.6 368.5" style="enable-background:new 0 0 657.6 368.5;" xml:space="preserve">
+                        <style type="text/css">
+                        .st0 {
+                        fill: #A9BDDF;
+                        }
+
+                        .st1 {
+                        fill: #2E4A7A;
+                        }
+
+                        .st2 {
+                        fill: #AABDDF;
+                        }
+
+                        .st3 {
+                        fill: #788FB7;
+                        }
+
+                        .st4 {
+                        fill: #101E4E;
+                        }
+
+                        .st5 {
+                        fill: #CCD7EC;
+                        }
+
+                        .st6 {
+                        fill: #FFFFFF;
+                        }
+
+                        .st7 {
+                        font-family: 'LucidaGrande';
+                        }
+
+                        .st8 {
+                        font-size: 36px;
+                        }
+                        </style>
+                        <symbol  id="Baum" viewBox="-82 -94.5 164.1 189.1">
+                        <g>
+                        <path id="Baum-innen_00000050641584332829807310000006891937583122926504_" class="st0" d="M77.4,75L45.1,37.7
+                            c-0.7-0.8-0.8-1.9-0.4-2.8s1.3-1.5,2.4-1.5h11.7c3.6,0,6.8-2,8.3-5.2c1.5-3.2,1-6.7-1.3-9.4L31.6-21.4c-0.7-0.8-0.8-1.8-0.4-2.8
+                            c0.4-0.9,1.3-1.5,2.4-1.5h15.3c3.7,0,5.9-2.1,6.8-4.1c1-2.2,0.6-4.5-1.1-6.3L6.3-90.2c-1.4-1.5-3.4-2.4-5.6-2.4
+                            c-0.2,0-0.3,0-0.4,0H0.1c0,0-0.1,0-0.1,0s-0.1,0-0.1,0h-0.1c-0.2,0-0.3,0-0.4,0c-2.2,0-4.2,0.9-5.6,2.4L-54.5-36
+                            c-1.7,1.8-2.1,4.1-1.1,6.3c0.9,2,3.1,4.1,6.8,4.1h15.3c1,0,1.9,0.6,2.3,1.5c0.4,0.9,0.3,2-0.4,2.8l-34.2,40.2
+                            c-2.3,2.7-2.7,6.2-1.3,9.4c1.5,3.2,4.7,5.2,8.3,5.2H-47c1,0,1.9,0.6,2.3,1.5s0.3,2-0.4,2.8L-77.4,75c-2.8,3.2-3.4,7.6-1.6,11.5
+                            c1.7,3.8,5.2,6.1,9.3,6.1H69.8c4.1,0,7.5-2.3,9.3-6.1C80.8,82.6,80.2,78.2,77.4,75L77.4,75z"/>
+                        <path id="Baumkontur_00000148656410081779520540000006900575516359059082_" class="st1" d="M78.9,73.7L46.6,36.4
+                            c-0.3-0.4-0.1-1,0.4-1h11.7c9.5,0,14.6-10.8,8.6-17.9L33.1-22.7c-0.3-0.4-0.1-1,0.4-1h15.3c7.9,0,12.1-8.3,7.1-13.8L7.8-91.5
+                            c-1.8-2-4.5-3.1-7.1-3.1c-0.2,0-0.4,0-0.7,0c-0.2,0-0.4,0-0.7,0c-2.6,0-5.3,1-7.1,3.1L-56-37.4c-5,5.5-0.7,13.8,7.2,13.8h15.3
+                            c0.5,0,0.8,0.6,0.5,1l-34.2,40.2c-6,7.1-0.9,17.9,8.6,17.9H-47c0.5,0,0.8,0.6,0.4,1l-32.4,37.3c-6.9,8-1.4,20.8,9.2,20.8H69.8
+                            C80.3,94.5,85.9,81.8,78.9,73.7L78.9,73.7z M69.8,92.5H-69.8c-4.1,0-7.5-2.3-9.3-6.1c-1.8-3.9-1.2-8.3,1.6-11.5l32.4-37.3
+                            c0.7-0.8,0.8-1.9,0.4-2.8s-1.3-1.5-2.3-1.5h-11.7c-3.6,0-6.8-2-8.3-5.2c-1.5-3.2-1-6.7,1.3-9.4l34.2-40.2c0.7-0.8,0.8-1.8,0.4-2.8
+                            s-1.3-1.5-2.3-1.5h-15.3c-3.7,0-5.9-2.1-6.8-4.1c-1-2.2-0.5-4.5,1.1-6.3l48.2-54.1c1.4-1.5,3.4-2.4,5.6-2.4c0.2,0,0.3,0,0.4,0h0.1
+                            c0,0,0.1,0,0.1,0s0.1,0,0.1,0h0.1c0.2,0,0.3,0,0.4,0c2.2,0,4.2,0.9,5.6,2.4L54.5-36c1.7,1.8,2.1,4.1,1.1,6.3
+                            c-0.9,2-3.1,4.1-6.8,4.1H33.5c-1,0-1.9,0.6-2.4,1.5c-0.4,0.9-0.3,2,0.4,2.8l34.2,40.2c2.3,2.7,2.8,6.2,1.3,9.4
+                            c-1.5,3.2-4.7,5.2-8.3,5.2H47c-1,0-1.9,0.6-2.3,1.5s-0.3,2,0.4,2.8L77.4,75c2.8,3.2,3.4,7.6,1.6,11.5
+                            C77.3,90.3,73.8,92.6,69.8,92.5L69.8,92.5z"/>
+                        </g>
+                        </symbol>
+                        <symbol  id="baum-hinter-haus" viewBox="-82 -94.5 164 189.1">
+                        <path id="Bauminnen_00000157304785964369911740000008536802934011192460_" class="st0" d="M77.4-75L45.1-37.7
+                        c-0.7,0.8-0.8,1.9-0.4,2.8c0.4,0.9,1.3,1.5,2.4,1.5h11.7c3.6,0,6.8,2,8.3,5.2c1.5,3.2,1,6.7-1.3,9.4L31.6,21.4
+                        c-0.6,0.8-0.8,1.9-0.4,2.8c0.4,0.9,1.3,1.5,2.4,1.5h15.3c3.7,0,5.9,2.1,6.8,4.1c1,2.2,0.6,4.5-1.1,6.3L6.3,90.2
+                        c-1.4,1.5-3.4,2.4-5.6,2.4c-0.1,0-0.3,0-0.4,0H0.1l-0.1,0h-0.1l-0.1,0c-0.1,0-0.3,0-0.4,0c-2.2,0-4.2-0.9-5.6-2.4l-48.2-54.1
+                        c-1.7-1.9-2.1-4.1-1.1-6.3c0.9-2,3.1-4.1,6.8-4.1h15.3c1,0,1.9-0.6,2.4-1.5c0.4-0.9,0.3-2-0.4-2.8l-34.2-40.2
+                        c-2.3-2.7-2.7-6.2-1.3-9.4c1.5-3.2,4.7-5.2,8.3-5.2h11.7c1,0,1.9-0.6,2.3-1.5s0.3-2-0.4-2.8L-77.5-75c-2.8-3.2-3.4-7.6-1.6-11.5
+                        c1.7-3.8,5.2-6,9.3-6H69.8c4.1,0,7.5,2.3,9.3,6C80.8-82.6,80.2-78.2,77.4-75"/>
+                        <path id="Baumkontur-2_00000005989327776903529630000004902103744217231537_" class="st1" d="M78.9-73.7L46.6-36.4
+                        c-0.3,0.4-0.1,1,0.4,1h11.7c9.5,0,14.6,10.8,8.6,17.9L33.1,22.7c-0.3,0.4-0.1,1,0.4,1h15.3c7.9,0,12.1,8.3,7.1,13.8L7.8,91.5
+                        c-1.9,2-4.5,3.1-7.1,3.1c-0.2,0-0.4,0-0.7,0c-0.2,0-0.4,0-0.7,0c-2.6,0-5.3-1-7.1-3.1L-56,37.4c-5-5.4-0.7-13.8,7.2-13.8h15.3
+                        c0.5,0,0.8-0.6,0.4-1l-34.2-40.2c-6-7.1-0.9-17.9,8.6-17.9H-47c0.5,0,0.8-0.6,0.4-1l-32.3-37.3c-6.9-8-1.4-20.8,9.2-20.8H69.8
+                        C80.3-94.5,85.9-81.8,78.9-73.7 M69.8-92.5H-69.8c-4.1,0-7.5,2.3-9.3,6c-1.8,3.9-1.2,8.3,1.6,11.5l32.4,37.3
+                        c0.7,0.8,0.8,1.9,0.4,2.8c-0.4,0.9-1.3,1.5-2.3,1.5h-11.7c-3.6,0-6.8,2-8.3,5.2c-1.5,3.2-1,6.7,1.3,9.4l34.2,40.2
+                        c0.6,0.8,0.8,1.9,0.4,2.8c-0.4,0.9-1.3,1.5-2.4,1.5h-15.3c-3.7,0-5.9,2.1-6.8,4.1c-1,2.2-0.6,4.5,1.1,6.3l48.2,54.1
+                        c1.4,1.5,3.4,2.4,5.6,2.4c0.1,0,0.3,0,0.4,0h0.1l0.1,0h0.1l0.1,0c0.1,0,0.3,0,0.4,0c2.2,0,4.2-0.9,5.6-2.4L54.5,36
+                        c1.7-1.8,2.1-4.1,1.1-6.3c-0.9-2-3.1-4.1-6.8-4.1H33.5c-1,0-1.9-0.6-2.4-1.5c-0.4-0.9-0.3-2,0.4-2.8l34.2-40.2
+                        c2.3-2.7,2.8-6.2,1.3-9.4c-1.5-3.2-4.7-5.2-8.3-5.2H47c-1,0-1.9-0.6-2.4-1.5c-0.4-0.9-0.3-2,0.4-2.8L77.4-75
+                        c2.8-3.2,3.4-7.6,1.6-11.5C77.3-90.3,73.8-92.6,69.8-92.5"/>
+                        <path id="Bauminnen-hinter-Fenster_00000044174519496508069270000007070835544418542496_" class="st2" d="M-54-4.9l-11.8-13.9
+                        c-1.4-1.6-2.1-3.6-2.1-5.6c0-1.3,0.3-2.5,0.8-3.8c1.5-3.2,4.7-5.2,8.3-5.2h7.6v23.1C-51.1-8-52.2-6.1-54-4.9"/>
+                        <path id="Baumkontur-hinter-Fenster_00000141438624597550487380000009354449816302140076_" class="st3" d="M-55.8-4.1l-11.5-13.5
+                        c-6-7.1-0.9-17.9,8.6-17.9h7.6v2h-7.6c-3.6,0-6.8,2-8.3,5.2c-0.6,1.2-0.8,2.5-0.8,3.8c0,2,0.7,4,2.1,5.6L-54-4.9
+                        C-54.5-4.6-55.2-4.3-55.8-4.1"/>
+                        </symbol>
+                        <symbol  id="haus" viewBox="-77.8 -84.2 155.5 168.4">
+                        <path id="Haus_00000096748667503237934250000009034539431782530712_" class="st4" d="M77.7,9.2c0,6-2.5,11.6-6.9,15.6L9.5,80.5
+                        C6.8,83,3.4,84.2,0,84.2s-6.8-1.2-9.5-3.7l-61.3-55.7c-4.4-4-6.9-9.7-6.9-15.7v-79.2c0-7.8,6.3-14.1,14.1-14.1H63.6
+                        c7.8,0,14.1,6.3,14.1,14.1L77.7,9.2L77.7,9.2z M19.4-25.9c0-3.6-2.9-6.5-6.5-6.5H-13c-3.6,0-6.5,2.9-6.5,6.5V0
+                        c0,3.6,2.9,6.5,6.5,6.5H13c3.6,0,6.5-2.9,6.5-6.5V-25.9z"/>
+                        <path id="Fenster_00000093884280654889174010000015940563858745532052_" class="st5" d="M13,6.5h-25.9c-3.6,0-6.5-2.9-6.5-6.5
+                        v-25.9c0-3.6,2.9-6.5,6.5-6.5H13c3.6,0,6.5,2.9,6.5,6.5v0.8h-7.6c-9.5,0-14.6,10.8-8.6,17.9L14.7,6.3C14.1,6.4,13.6,6.5,13,6.5"/>
+                        </symbol>
+                        <rect class="st6" width="657.6" height="368.5"/>
+                        <use xlink:href="#baum-hinter-haus"  width="164" height="189.1" x="-82" y="-94.5" transform="matrix(1 0 0 -1 173.425 248.235)" style="overflow:visible;"/>
+                        <use xlink:href="#haus"  width="155.5" height="168.4" id="XMLID_00000036247875658150536210000007528157484263021226_" x="-77.8" y="-84.2" transform="matrix(1 0 0 -1 102.88 258.56)" style="overflow:visible;"/>
+                        <g id="Baum-C">
+
+                        <use xlink:href="#Baum"  width="164.1" height="189.1" x="-82" y="-94.5" transform="matrix(1 0 0 1 546.5967 205.3)" style="overflow:visible;"/>
+                        <text transform="matrix(1 0 0 1 538.02 46.59)" class="st7 st8">C</text>
+                        </g>
+                        <g id="Baum-B">
+
+                        <use xlink:href="#Baum"  width="164.1" height="189.1" x="-82" y="-94.5" transform="matrix(1 0 0 1 482.2466 226.77)" style="overflow:visible;"/>
+                        <text transform="matrix(1 0 0 1 475.77 46.59)" class="st7 st8">B</text>
+                        </g>
+                        <g id="Baum-A">
+
+                        <use xlink:href="#Baum"  width="164.1" height="189.1" x="-82" y="-94.5" transform="matrix(1 0 0 1 417.8966 248.24)" style="overflow:visible;"/>
+                        <text transform="matrix(1 0 0 1 409.35 46.59)" class="st7 st8">A</text>
+                        </g>
+                        </svg>
+                        <p class="small">In der Abbildung wird ein Baum von einem Haus verdeckt und wirkt weiter weg,
+                            obwohl sich in dem Bild beide Objekte auf der gleichen Höhe befinden. Innerhalb der
+                            Baumgruppe wirkt Baum C, welcher von zwei davor platzierten Bäumen verdeckt wird, am
+                            weitesten weg.</p>
                     </div>
                     <h5>Satz</h5>
                     <p> Ein verdecktes Objekt ist im Blickfeld des Betrachtenden weiter entfernt als
-                    das verdeckende Objekt.</p>
+                        das verdeckende Objekt.</p>
                     <h5>Beschreibung</h5>
-                    <p>Existieren mehrere Objekte in einer visuellen Szene, so kommt es zu Überlappungen. Das bedeutet, bestimmte Objekte verdecken andere Objekte ganz oder teilweise. Auf diese Weise kann die Entfernung der Objekte im Blickfeld des Betrachtenden abgeschätzt werden, wobei das zum Teil verdeckte Objekt als weiter weg wahrgenommen wird, als das davor platzierte Objekt</p>
+                    <p>Existieren mehrere Objekte in einer visuellen Szene, so kommt es zu Überlappungen. Das bedeutet,
+                        bestimmte Objekte verdecken andere Objekte ganz oder teilweise. Auf diese Weise kann die
+                        Entfernung der Objekte im Blickfeld des Betrachtenden abgeschätzt werden, wobei das zum Teil
+                        verdeckte Objekt als weiter weg wahrgenommen wird, als das davor platzierte Objekt</p>
                     <h5>Anmerkung</h5>
-                    <p>Die Verdeckung liefert keine Informationen über die absolute Entfernung eines Objekts, sondern zeigt nur die relative Entfernung an. Ein verdecktes Objekt ist weiter entfernt, wie weit konkret ist durch die Verdeckung nicht abschätzbar</p>
+                    <p>Die Verdeckung liefert keine Informationen über die absolute Entfernung eines Objekts, sondern
+                        zeigt nur die relative Entfernung an. Ein verdecktes Objekt ist weiter entfernt, wie weit
+                        konkret ist durch die Verdeckung nicht abschätzbar</p>
                     <h3>Verwendung auf dieser Webseite</h3>
-                    <p>ToDo - Schneeflocken überdecken sich beim Fallen gegenseitig, <br />
-                        - fallende Flocken werden vom Text Monukulare verdeckt, verdecken selbst jedoch Teile des Texts Tiefenhinweise</p>
+                    <p>ToDo - Schneeflocken überdecken sich beim Fallen gegenseitig, <br/>
+                        - fallende Flocken werden vom Text Monukulare verdeckt, verdecken selbst jedoch Teile des Texts
+                        Tiefenhinweise</p>
                 </div>
                 <div class="modal-footer"></div>
             </div>
@@ -194,15 +327,75 @@
                 <div class="modal-body">
                     <h3>Beschreibung</h3>
                     <div class="float-img">
-                        <svg id="relative-hoehe" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 651.97 396.85"><defs><style>.cls-1{fill:#e9c593;}.cls-2{fill:#fff;}.cls-3{fill:#a9bddf;}.cls-4{fill:#101e4e;}</style><symbol id="Berge" viewBox="0 0 651.97 137.67"><g><polygon id="Berge-2" class="cls-3" points="651.97 2.2 507.53 68.19 506.72 68.21 477.12 55.99 352.55 123.36 351.61 123.37 240.3 65.32 211.04 80.57 210.11 80.56 132.58 38.8 0 63.2 0 135.67 651.97 135.67 651.97 2.2"/><rect id="Horizont" class="cls-4" x="0" y="135.67" width="651.97" height="2"/><polygon id="Bergkamm" class="cls-4" points="210.11 80.56 211.04 80.57 240.3 65.32 351.61 123.37 352.55 123.36 477.12 55.99 506.72 68.21 507.53 68.19 651.97 2.2 651.97 0 507.08 66.19 477.44 53.96 476.59 54 352.06 121.35 240.77 63.31 239.84 63.31 210.59 78.55 133.22 36.87 132.56 36.77 0 61.16 0 63.2 132.58 38.8 210.11 80.56"/></g></symbol><symbol id="Katze" viewBox="0 0 167.51 156.95"><g><path id="Katzenkoerper" class="cls-1" d="M146.18,21.69h-20.81l-.37-.15L105.08,1.61V44.07c0,16.77,13.77,30.41,30.7,30.41s30.7-13.64,30.7-30.41V1.61l-19.93,19.93-.37,.15Zm-17.69,20.29c0,.74-.15,1.45-.41,2.11-.83,2.15-2.87,3.61-5.31,3.61-3.15,0-5.72-2.57-5.72-5.72s2.57-5.72,5.72-5.72,5.4,2.21,5.69,5.13c0,.05,0,.1,0,.14,.01,.14,.02,.27,.02,.41,0,0,0,.01,0,.02,0,0,0,.01,0,.02Zm25.98-.59s0,.1,0,.14c.01,.14,.02,.27,.02,.41,0,0,0,.01,0,.02,0,0,0,.01,0,.02,0,.74-.15,1.44-.4,2.09-.83,2.16-2.87,3.63-5.32,3.63-3.15,0-5.72-2.57-5.72-5.72s2.57-5.72,5.72-5.72,5.4,2.21,5.69,5.13Zm-70.2,42.21v-29.83c4.83-.79,8.65-.86,10.31-.86,4.14,19.32,21.4,33.29,41.19,33.29,3.07,0,6.23-.42,9.89-1.32v66.35c0,2.58-2.1,4.69-4.69,4.69h-10.4c-2.58,0-4.69-2.1-4.69-4.69v-46.82l-.83-.41-41.62,31.21,.31,.93h10.4c5.45,0,9.89,4.44,9.89,9.89v5.5c0,2.38-2.15,4.39-4.69,4.39H42.14c-11.19,0-20.29-9.1-20.29-20.29V52.39c0-6.02-4.9-10.92-10.92-10.92-5.45,0-9.89-4.44-9.89-9.89s4.44-9.89,9.89-9.89c16.93,0,30.7,13.77,30.7,30.7v31.53l22.21,11.1-9.28-28.12c4.35-3.39,8.93-6.18,13.61-8.3l15.15,25.26h0s.96,1.6,.96,1.6v-1.86Z"/><path id="Katzenaugen" class="cls-4" d="M128.49,41.95s0,.01,0,.02c0,0,0,.01,0,.02,0,.74-.15,1.45-.41,2.11-.83,2.15-2.87,3.61-5.31,3.61-3.15,0-5.72-2.57-5.72-5.72s2.57-5.72,5.72-5.72,5.4,2.21,5.69,5.13c0,.05,0,.1,0,.14,.01,.14,.02,.27,.02,.41Zm26.01,0c0-.14-.01-.27-.02-.41,0-.05,0-.1,0-.14-.29-2.92-2.69-5.13-5.69-5.13-3.15,0-5.72,2.57-5.72,5.72s2.57,5.72,5.72,5.72c2.44,0,4.49-1.47,5.32-3.63,.26-.65,.4-1.35,.4-2.09,0,0,0-.01,0-.02,0,0,0-.01,0-.02Z"/><path id="Katzenfell" class="cls-4" d="M54.54,66.91l9.28,28.12-22.21-11.1v-3.73l.09-.13c.31-.47,.63-.93,.95-1.39,3.04-4.36,6.54-8.32,10.94-12.33l.59-.54,.02,.07,.34,1.03Zm29.14-14.09h-.01s0,0,0,0c-5.37,.91-10.58,2.47-15.5,4.65,0,0,0,0-.01,0l-.12,.05-.42,.18h0s15.69,26.15,15.69,26.15l.96,1.6V52.73h0s-.59,.1-.59,.1Z"/><path id="Katzenkontur" class="cls-4" d="M146.06,83.72l.64,.5v67.01c0,3.15-2.57,5.72-5.72,5.72h-10.4c-3.15,0-5.72-2.57-5.72-5.72v-45.79l-39.55,29.66h8.85c6.02,0,10.92,4.9,10.92,10.92v5.5c0,2.94-2.62,5.43-5.72,5.43H42.14c-11.76,0-21.33-9.57-21.33-21.33V52.39c0-5.45-4.44-9.89-9.89-9.89-6.02,0-10.92-4.9-10.92-10.92s4.9-10.92,10.92-10.92c17.5,0,31.73,14.23,31.73,31.73v26.29c-.32,.46-.64,.92-.95,1.39l-.09,.13v-27.81c0-16.93-13.77-30.7-30.7-30.7-5.45,0-9.89,4.44-9.89,9.89s4.44,9.89,9.89,9.89c6.02,0,10.92,4.9,10.92,10.92v83.24c0,11.19,9.1,20.29,20.29,20.29h57.23c2.54,0,4.69-2.01,4.69-4.39v-5.5c0-5.45-4.44-9.89-9.89-9.89h-10.4l-.31-.93,41.62-31.21,.83,.41v46.82c0,2.58,2.1,4.69,4.69,4.69h10.4c2.58,0,4.69-2.1,4.69-4.69V84.88c-3.66,.9-6.82,1.32-9.89,1.32-19.8,0-37.05-13.98-41.19-33.29-1.67,0-5.48,.08-10.31,.86v-1.04c5.3-.85,9.37-.85,10.73-.85l.51,.41c3.88,19.05,20.82,32.88,40.27,32.88,3.16,0,6.42-.46,10.28-1.45ZM167.51,.37V44.07c0,17.33-14.23,31.44-31.73,31.44s-31.73-14.1-31.73-31.44V.37l.88-.37,20.66,20.66h20.38L166.63,0l.88,.37Zm-1.03,1.25l-19.93,19.93-.37,.15h-20.81l-.37-.15L105.08,1.61V44.07c0,16.77,13.77,30.41,30.7,30.41s30.7-13.64,30.7-30.41V1.61ZM54.54,66.91c4.35-3.39,8.93-6.18,13.61-8.3l15.15,25.26h0s-15.69-26.14-15.69-26.14c-4.62,2.1-9.13,4.83-13.42,8.15l.34,1.03Z"/></g></symbol></defs><rect id="Hintergrund" class="cls-2" x="0" width="651.97" height="396.85"/><path id="Strasse" class="cls-4" d="M81.15,396.85l244.63-197.97L93.65,396.85h-12.5Zm477.29,0h12.48s-244.14-197.97-244.14-197.97l231.66,197.97Z"/><use width="167.51" height="156.95" transform="translate(226.62 289.1) scale(.5)" xlink:href="#Katze"/><use width="167.51" height="156.95" transform="translate(281.59 239.43) scale(.22)" xlink:href="#Katze"/><use width="651.97" height="137.67" transform="translate(0 65.49)" xlink:href="#Berge"/></svg>
-                        <p class="small">Die sonst parallel verlaufenden Linien der Straße konvergieren für den Betrachtenden in einem Punkt am Horizont. Zusätzlich verjüngen die Linie. Das bedeutet, die Linien wirken nahe beim Betrachten breiter als am Horizont. Dies wird als Größe-Entfernungs-Relation bezeichnet, welche im Tiefenhinweis der relativen Größe im Blickfeld näher beschrieben wird.</p>
+                        <svg id="relative-hoehe" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 651.97 396.85">
+                            <defs>
+                                <style>.cls-1 {
+                                    fill: #e9c593;
+                                }
+
+                                .cls-2 {
+                                    fill: #fff;
+                                }
+
+                                .cls-3 {
+                                    fill: #a9bddf;
+                                }
+
+                                .cls-4 {
+                                    fill: #101e4e;
+                                }</style>
+                                <symbol id="Berge" viewBox="0 0 651.97 137.67">
+                                    <g>
+                                        <polygon id="Berge-2" class="cls-3"
+                                                 points="651.97 2.2 507.53 68.19 506.72 68.21 477.12 55.99 352.55 123.36 351.61 123.37 240.3 65.32 211.04 80.57 210.11 80.56 132.58 38.8 0 63.2 0 135.67 651.97 135.67 651.97 2.2"/>
+                                        <rect id="Horizont" class="cls-4" x="0" y="135.67" width="651.97" height="2"/>
+                                        <polygon id="Bergkamm" class="cls-4"
+                                                 points="210.11 80.56 211.04 80.57 240.3 65.32 351.61 123.37 352.55 123.36 477.12 55.99 506.72 68.21 507.53 68.19 651.97 2.2 651.97 0 507.08 66.19 477.44 53.96 476.59 54 352.06 121.35 240.77 63.31 239.84 63.31 210.59 78.55 133.22 36.87 132.56 36.77 0 61.16 0 63.2 132.58 38.8 210.11 80.56"/>
+                                    </g>
+                                </symbol>
+                                <symbol id="Katze" viewBox="0 0 167.51 156.95">
+                                    <g>
+                                        <path id="Katzenkoerper" class="cls-1"
+                                              d="M146.18,21.69h-20.81l-.37-.15L105.08,1.61V44.07c0,16.77,13.77,30.41,30.7,30.41s30.7-13.64,30.7-30.41V1.61l-19.93,19.93-.37,.15Zm-17.69,20.29c0,.74-.15,1.45-.41,2.11-.83,2.15-2.87,3.61-5.31,3.61-3.15,0-5.72-2.57-5.72-5.72s2.57-5.72,5.72-5.72,5.4,2.21,5.69,5.13c0,.05,0,.1,0,.14,.01,.14,.02,.27,.02,.41,0,0,0,.01,0,.02,0,0,0,.01,0,.02Zm25.98-.59s0,.1,0,.14c.01,.14,.02,.27,.02,.41,0,0,0,.01,0,.02,0,0,0,.01,0,.02,0,.74-.15,1.44-.4,2.09-.83,2.16-2.87,3.63-5.32,3.63-3.15,0-5.72-2.57-5.72-5.72s2.57-5.72,5.72-5.72,5.4,2.21,5.69,5.13Zm-70.2,42.21v-29.83c4.83-.79,8.65-.86,10.31-.86,4.14,19.32,21.4,33.29,41.19,33.29,3.07,0,6.23-.42,9.89-1.32v66.35c0,2.58-2.1,4.69-4.69,4.69h-10.4c-2.58,0-4.69-2.1-4.69-4.69v-46.82l-.83-.41-41.62,31.21,.31,.93h10.4c5.45,0,9.89,4.44,9.89,9.89v5.5c0,2.38-2.15,4.39-4.69,4.39H42.14c-11.19,0-20.29-9.1-20.29-20.29V52.39c0-6.02-4.9-10.92-10.92-10.92-5.45,0-9.89-4.44-9.89-9.89s4.44-9.89,9.89-9.89c16.93,0,30.7,13.77,30.7,30.7v31.53l22.21,11.1-9.28-28.12c4.35-3.39,8.93-6.18,13.61-8.3l15.15,25.26h0s.96,1.6,.96,1.6v-1.86Z"/>
+                                        <path id="Katzenaugen" class="cls-4"
+                                              d="M128.49,41.95s0,.01,0,.02c0,0,0,.01,0,.02,0,.74-.15,1.45-.41,2.11-.83,2.15-2.87,3.61-5.31,3.61-3.15,0-5.72-2.57-5.72-5.72s2.57-5.72,5.72-5.72,5.4,2.21,5.69,5.13c0,.05,0,.1,0,.14,.01,.14,.02,.27,.02,.41Zm26.01,0c0-.14-.01-.27-.02-.41,0-.05,0-.1,0-.14-.29-2.92-2.69-5.13-5.69-5.13-3.15,0-5.72,2.57-5.72,5.72s2.57,5.72,5.72,5.72c2.44,0,4.49-1.47,5.32-3.63,.26-.65,.4-1.35,.4-2.09,0,0,0-.01,0-.02,0,0,0-.01,0-.02Z"/>
+                                        <path id="Katzenfell" class="cls-4"
+                                              d="M54.54,66.91l9.28,28.12-22.21-11.1v-3.73l.09-.13c.31-.47,.63-.93,.95-1.39,3.04-4.36,6.54-8.32,10.94-12.33l.59-.54,.02,.07,.34,1.03Zm29.14-14.09h-.01s0,0,0,0c-5.37,.91-10.58,2.47-15.5,4.65,0,0,0,0-.01,0l-.12,.05-.42,.18h0s15.69,26.15,15.69,26.15l.96,1.6V52.73h0s-.59,.1-.59,.1Z"/>
+                                        <path id="Katzenkontur" class="cls-4"
+                                              d="M146.06,83.72l.64,.5v67.01c0,3.15-2.57,5.72-5.72,5.72h-10.4c-3.15,0-5.72-2.57-5.72-5.72v-45.79l-39.55,29.66h8.85c6.02,0,10.92,4.9,10.92,10.92v5.5c0,2.94-2.62,5.43-5.72,5.43H42.14c-11.76,0-21.33-9.57-21.33-21.33V52.39c0-5.45-4.44-9.89-9.89-9.89-6.02,0-10.92-4.9-10.92-10.92s4.9-10.92,10.92-10.92c17.5,0,31.73,14.23,31.73,31.73v26.29c-.32,.46-.64,.92-.95,1.39l-.09,.13v-27.81c0-16.93-13.77-30.7-30.7-30.7-5.45,0-9.89,4.44-9.89,9.89s4.44,9.89,9.89,9.89c6.02,0,10.92,4.9,10.92,10.92v83.24c0,11.19,9.1,20.29,20.29,20.29h57.23c2.54,0,4.69-2.01,4.69-4.39v-5.5c0-5.45-4.44-9.89-9.89-9.89h-10.4l-.31-.93,41.62-31.21,.83,.41v46.82c0,2.58,2.1,4.69,4.69,4.69h10.4c2.58,0,4.69-2.1,4.69-4.69V84.88c-3.66,.9-6.82,1.32-9.89,1.32-19.8,0-37.05-13.98-41.19-33.29-1.67,0-5.48,.08-10.31,.86v-1.04c5.3-.85,9.37-.85,10.73-.85l.51,.41c3.88,19.05,20.82,32.88,40.27,32.88,3.16,0,6.42-.46,10.28-1.45ZM167.51,.37V44.07c0,17.33-14.23,31.44-31.73,31.44s-31.73-14.1-31.73-31.44V.37l.88-.37,20.66,20.66h20.38L166.63,0l.88,.37Zm-1.03,1.25l-19.93,19.93-.37,.15h-20.81l-.37-.15L105.08,1.61V44.07c0,16.77,13.77,30.41,30.7,30.41s30.7-13.64,30.7-30.41V1.61ZM54.54,66.91c4.35-3.39,8.93-6.18,13.61-8.3l15.15,25.26h0s-15.69-26.14-15.69-26.14c-4.62,2.1-9.13,4.83-13.42,8.15l.34,1.03Z"/>
+                                    </g>
+                                </symbol>
+                            </defs>
+                            <rect id="Hintergrund" class="cls-2" x="0" width="651.97" height="396.85"/>
+                            <path id="Strasse" class="cls-4"
+                                  d="M81.15,396.85l244.63-197.97L93.65,396.85h-12.5Zm477.29,0h12.48s-244.14-197.97-244.14-197.97l231.66,197.97Z"/>
+                            <use width="167.51" height="156.95" transform="translate(226.62 289.1) scale(.5)"
+                                 xlink:href="#Katze"/>
+                            <use width="167.51" height="156.95" transform="translate(281.59 239.43) scale(.22)"
+                                 xlink:href="#Katze"/>
+                            <use width="651.97" height="137.67" transform="translate(0 65.49)" xlink:href="#Berge"/>
+                        </svg>
+                        <p class="small">Die sonst parallel verlaufenden Linien der Straße konvergieren für den
+                            Betrachtenden in einem Punkt am Horizont. Zusätzlich verjüngen die Linie. Das bedeutet, die
+                            Linien wirken nahe beim Betrachten breiter als am Horizont. Dies wird als
+                            Größe-Entfernungs-Relation bezeichnet, welche im Tiefenhinweis der relativen Größe im
+                            Blickfeld näher beschrieben wird.</p>
                     </div>
                     <h5>Satz</h5>
-                    <p>Parallel verlaufende Linien konvergieren10 im Raum, je weiter sie vom Betrachtenden entfernt sind, sodass diese auf einen gemeinsamen Fluchtpunkt am Horizont zu laufen.
+                    <p>Parallel verlaufende Linien konvergieren10 im Raum, je weiter sie vom Betrachtenden entfernt
+                        sind, sodass diese auf einen gemeinsamen Fluchtpunkt am Horizont zu laufen.
                     </p>
                     <h5>Beschreibung</h5>
-                    <p>Die sogenannte Fluchtpunktperspektive wird gerne von Kunstschaffenden verwendet, um Gemälden den Eindruck von Tiefe zu verleihen. Der Moment, in dem das Zusammenlaufen der sonst parallel verlaufenden Linien im Fluchtpunkt erlebt wird, nennt sich perspektivische Konvergenz. Die Wirkung der perspektivischen Konvergenz ist dabei stark vom Ort des Betrachtenden, also dessen Sehwinkel, abhängig. </p>
-                    <p>Die Linearperspektive folgt dabei optisch-geometrischen Gesetzen: Näher am Auge befindliche Objekte werden auf der Retina größer abgebildet, weiter entfernte Objekte kleiner. Das bedeutet, der Abstand zwischen zwei parallel verlaufenden Linien wird mit zunehmender Entfernung immer kleiner.</p>
+                    <p>Die sogenannte Fluchtpunktperspektive wird gerne von Kunstschaffenden verwendet, um Gemälden den
+                        Eindruck von Tiefe zu verleihen. Der Moment, in dem das Zusammenlaufen der sonst parallel
+                        verlaufenden Linien im Fluchtpunkt erlebt wird, nennt sich perspektivische Konvergenz. Die
+                        Wirkung der perspektivischen Konvergenz ist dabei stark vom Ort des Betrachtenden, also dessen
+                        Sehwinkel, abhängig. </p>
+                    <p>Die Linearperspektive folgt dabei optisch-geometrischen Gesetzen: Näher am Auge befindliche
+                        Objekte werden auf der Retina größer abgebildet, weiter entfernte Objekte kleiner. Das bedeutet,
+                        der Abstand zwischen zwei parallel verlaufenden Linien wird mit zunehmender Entfernung immer
+                        kleiner.</p>
 
 
                     <h3>Verwendung auf dieser Webseite</h3>
@@ -231,6 +424,10 @@
 <div class="boden boden-1"></div>
 <div class="boden boden-2"></div>
 <div class="boden boden-3"></div>
+
+<div class="kugel kugel-1"></div>
+<div class="kugel kugel-2"></div>
+<div class="kugel kugel-3"></div>
 
 <script src="js/behaviour.js"></script>
 </body>

@@ -8,6 +8,7 @@
 .hat_rel_groesse {}
 .hat_parallax {}
 .hat_blur {}
+.hat_schatten(){}
 
 html, body {
     height: 100%;
@@ -395,7 +396,47 @@ body {
 .boden-3 {
     background: linear-gradient(270deg, #0C1126 0%, #0E183A 50%, #0C1126 0%);
     z-index: 7;
-    box-shadow: rgb(0 0 0 / 56%) 0 -21px 70px 4px;
+    box-shadow: rgb(0 0 0) 0 -21px 70px 4px;
 }
+
+.kugel {
+    display: block;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.kugel-1 {
+    bottom: 4vh;
+    left: 55vw;
+    z-index: 19;
+    height: 8vh;
+    width: 8vh;
+    background: radial-gradient(circle at 30px 30px, #5cabff, #000);
+    box-shadow: rgb(0 0 0) 0 10px 2vh -4px;
+}
+
+
+.kugel-2 {
+    bottom: 13vh;
+    left: 60vw;
+    z-index: 18;
+    height: 5vh;
+    width: 5vh;
+    background: radial-gradient(circle at 12px 18px, #5cabff, #000);
+    box-shadow: rgb(0 0 0) 0 10px 2vh -4px;
+}
+
+.kugel-3{
+    bottom: 9.5vh;
+    left: 63vw;
+    z-index: 18;
+    height: 6vh;
+    width: 6vh;
+    background: radial-gradient(circle at 7px 21px, #5cabff, #000);
+    box-shadow: rgb(0 0 0) 0 10px 2vh -4px;
+}
+
+
 
 
