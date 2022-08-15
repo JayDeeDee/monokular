@@ -8,7 +8,7 @@
 .hat_rel_groesse {}
 .hat_parallax {}
 .hat_blur {}
-.hat_schatten(){}
+.hat_schatten{}
 
 html, body {
     height: 100%;
@@ -20,9 +20,10 @@ html {
 }
 body {
     overflow: hidden;
+   background: #101e4e
 }
 
-.hat_helligkeit {
+body.hat_atmosphaere {
     background: radial-gradient(ellipse at bottom, #101e4e 0%, #090a0f 100%);
     /*  background: radial-gradient(ellipse at bottom, #101e4e 0%, red 100%)
     background: linear-gradient(#123 30%, #667);*/
@@ -152,6 +153,7 @@ body {
     z-index: 8;
 }
 
+.hat_schatten .titel h1 span.bottom,
 .hat_helligkeit .titel h1 span.bottom {
     background: -webkit-linear-gradient(#101e4e, #adbcc4);
     -webkit-background-clip: text;
@@ -159,6 +161,11 @@ body {
     text-shadow: 2px 1px rgba(40, 40, 40, 0.2);
     opacity: .8;
 }
+.hat_blur .titel h1 span.bottom {
+    filter: blur(1px);
+}
+
+.hat_schatten .titel h1 span.top,
 .hat_helligkeit .titel h1 span.top {
     background: -webkit-linear-gradient(#FFF, #a8d2e9);
     -webkit-background-clip: text;
@@ -270,6 +277,14 @@ body {
     margin: 1em 1em 0 0;
 }
 
+.float-img.shrink {
+    max-width: 35%;
+}
+
+.float-img img {
+    max-width: 100%;
+}
+
 /**
  * buttons
  */
@@ -312,30 +327,47 @@ body {
     background-color: #0A0C15;
 }
 
-.btn-group-parallax .btn-on{
+.btn-group-parallax .btn-on,
+.btn-group-rel-groesse .btn-on,
+.btn-group-rel-hoehe .btn-on,
+.btn-group-blur .btn-on,
+.btn-group-schatten .btn-on,
+.btn-group-atmosphaere .btn-on,
+.btn-group-linear .btn-on {
     display: none;
 }
-.hat_parallax .btn-group-parallax .btn-on{
-    display: block;
-}
-.hat_parallax .btn-group-parallax .btn-off{
-    display: none;
-}
-
-.btn-group-rel-groesse .btn-on{
-    display: none;
-}
+.hat_parallax .btn-group-parallax .btn-on,
+.hat_linear .btn-group-linear .btn-on,
+.hat_rel-hoehe .btn-group-rel-hoehe .btn-on,
+.hat_schatten .btn-group-schatten .btn-on,
+.hat_blur .btn-group-blur .btn-on,
+.hat_atmosphaere .btn-group-atmosphaere .btn-on,
 .hat_rel-groesse .btn-group-rel-groesse .btn-on{
     display: block;
 }
-.hat_rel-groesse .btn-group-rel-groesse .btn-off{
+.hat_parallax .btn-group-parallax .btn-off,
+.hat_linear .btn-group-linear .btn-off,
+.hat_rel-hoehe .btn-group-rel-hoehe .btn-off,
+.hat_schatten .btn-group-schatten .btn-off,
+.hat_blur .btn-group-blur .btn-off,
+.hat_atmosphaere .btn-group-atmosphaere .btn-off,
+.hat_rel-groesse .btn-group-rel-groesse .btn-off {
     display: none;
 }
+
 
 /**
  * raum
  */
+
 .linie {
+    width: 1px;
+    height: 21.5vh;
+    border-left: 1px solid #fff;
+    position: absolute;
+    z-index: 16;
+}
+.hat_linear .linie {
     width: 0;
     height: 0;
     border-left: 2px solid transparent;
@@ -344,16 +376,22 @@ body {
 }
 
 .linie-1 {
-    position: absolute;
-    z-index: 16;
+    bottom: 0;
+    left: 13vw;
+}
+
+.hat_linear .linie-1 {
     bottom: -16vh;
     left: 13vw;
     transform: rotate(60deg);
 }
 
 .linie-3 {
-    position: absolute;
-    z-index: 16;
+    left: 30vw;
+    bottom: 0;
+}
+
+.hat_linear .linie-3 {
     left: 30vw;
     bottom: -16vh;
     transform: rotate(43deg);
@@ -361,26 +399,34 @@ body {
 }
 
 .linie-2 {
-    position: absolute;
-    z-index: 16;
+    bottom: 0;
+    right: 13vw;
+}
+
+.hat_linear .linie-2 {
     bottom: -16vh;
     right: 13vw;
     transform: rotate(-60deg);
 }
 
 .linie-4 {
-    position: absolute;
-    z-index: 16;
+    right: 30vw;
+    bottom: 0;
+}
+
+.hat_linear .linie-4 {
     right: 30vw;
     bottom: -16vh;
     transform: rotate(-43deg);
     border-bottom-width: 43vh;
 }
 
-
 .linie-5 {
-    position: absolute;
-    z-index: 16;
+    left: 50%;
+    bottom:0;
+}
+
+.hat_linear .linie-5 {
     left: 50%;
     bottom: -16vh;
     border-bottom-width: 35vh;
@@ -408,8 +454,13 @@ body {
 .boden-3 {
     background: linear-gradient(270deg, #0C1126 0%, #0E183A 50%, #0C1126 0%);
     z-index: 7;
+}
+
+.hat_schatten .boden-3 {
+    background: linear-gradient(270deg, #0C1126 0%, #0E183A 50%, #0C1126 0%);
     box-shadow: rgb(0 0 0) 0 -21px 70px 4px;
 }
+
 
 .kugel {
     display: block;
@@ -419,36 +470,81 @@ body {
 }
 
 .kugel-1 {
-    bottom: 4vh;
+    background:  #5cabff;
+    bottom: 16vh;
     left: 55vw;
     z-index: 19;
+    height: 6vh;
+    width: 6vh;
+}
+
+.hat_rel-groesse .kugel-1 {
     height: 8vh;
     width: 8vh;
+}
+
+.hat_rel-hoehe .kugel-1 {
+    bottom: 4vh;
+}
+
+.hat_schatten .kugel-1 {
     background: radial-gradient(circle at 30px 30px, #5cabff, #000);
     box-shadow: rgb(0 0 0) 0 10px 2vh -4px;
 }
 
-
 .kugel-2 {
+    background:  #5cabff;
+    bottom: 16vh;
+    left: 60vw;
+    z-index: 18;
+    height: 6vh;
+    width: 6vh;
+}
+
+.hat_rel-groesse .kugel-2 {
     bottom: 16vh;
     left: 60vw;
     z-index: 18;
     height: 5vh;
     width: 5vh;
+}
+
+.hat_rel-hoehe .kugel-2 {
+    bottom: 16vh;
+}
+
+
+.hat_schatten .kugel-2 {
     background: radial-gradient(circle at 12px 18px, #5cabff, #000);
     box-shadow: rgb(0 0 0) 0 10px 2vh -4px;
 }
 
+.hat_blur .kugel-2 {
+    filter: blur(0.1vh);
+}
+
 .kugel-3{
-    bottom: 10vh;
-    left: 61.7vw;
+    background:  #5cabff;
+    bottom: 16vh;
+    left: 63.7vw;
     z-index: 18;
     height: 6vh;
     width: 6vh;
+}
+
+.hat_rel-hoehe .kugel-3{
+    bottom: 10vh;
+    left: 61.7vw;
+}
+
+.hat_schatten .kugel-3 {
     background: radial-gradient(circle at 7px 21px, #5cabff, #000);
     box-shadow: rgb(0 0 0) 0 10px 2vh -4px;
 }
 
+.hat_blur .kugel-3 {
+    filter: blur(0.09vh);
+}
 
 
 
