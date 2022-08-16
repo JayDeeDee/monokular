@@ -20,7 +20,8 @@ html {
 }
 body {
     overflow: hidden;
-   background: #101e4e
+   background: #101e4e;
+    position: relative;
 }
 
 body.hat_atmosphaere {
@@ -316,6 +317,7 @@ body.hat_atmosphaere {
 }
 .btn-area .btn {
     border-radius: 0;
+    margin-top: .5rem;
 }
 .btn-area .btn-primary {
     background-color: #142047;
@@ -546,5 +548,40 @@ body.hat_atmosphaere {
     filter: blur(0.09vh);
 }
 
+@media only screen and (orientation: portrait) {
 
+    .titel h1 {
+        font-size: 3vw;
+    }
+
+    .hat_rel-groesse .titel .top {
+        font-size: 4.6vw;
+    }
+
+    .hat_linear .linie-1 {
+        bottom: -22vh;
+        left: 5vw;
+        transform: rotate(40deg);
+    }
+
+    .hat_linear .linie-2 {
+        bottom: -22vh;
+        right: 5vw;
+        transform: rotate(-40deg);
+    }
+    .hat_linear .linie-3 {
+        left: 28vw;
+        bottom: -19.5vh;
+        transform: rotate(23deg);
+    }
+    .hat_linear .linie-4 {
+        right: 28vw;
+        bottom: -19.5vh;
+        transform: rotate(-23deg);
+    }
+
+    .hat_linear .linie-5 {
+        bottom: -13.2vh;
+    }
+}
 
