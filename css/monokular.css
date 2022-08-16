@@ -267,6 +267,9 @@ body.hat_atmosphaere {
     float: none;
     clear: both;
 }
+.modal-body img {
+    max-width: 100%;
+}
 
 .modal-dialog h5 {
     margin-top: 1rem;

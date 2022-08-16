@@ -16,7 +16,7 @@
            effectClass = $this.attr('data-on');
        $('body').removeClass(effectClass);
        if(effectClass == 'hat_atmosphaere') {
-           $('button[data-on="hat_blur"]').trigger('click')
+           $('body').removeClass('hat_blur');
        }
     });
 
@@ -25,7 +25,7 @@
             effectClass = $this.attr('data-off');
         $('body').addClass(effectClass);
         if(effectClass == 'hat_atmosphaere') {
-            $('button[data-off="hat_blur"]').trigger('click')
+            $('body').addClass('hat_blur');
         }
     });
 })(jQuery);
